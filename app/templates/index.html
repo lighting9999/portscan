@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port and Ping Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Port and Ping Scanner</h1>
+    <form action="/scan/port" method="post">
+        <label for="host">Host:</label>
+        <input type="text" id="host" name="host" required>
+        <label for="ports">Ports:</label>
+        <input type="text" id="ports" name="ports" required>
+        <button type="submit">Start Port Scan</button>
+    </form>
+    <form action="/scan/ping" method="post">
+        <label for="host">Host:</label>
+        <input type="text" id="host" name="host" required>
+        <button type="submit">Start Ping Scan</button>
+    </form>
+</body>
+</html>
 
